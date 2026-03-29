@@ -3,336 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devesh Jangid || Portfolio</title>
-    <link rel="icon" href="Assests/photo (2).png">
+    <title>Devesh Jangid | Portfolio</title>
+    <link rel="icon" href="Assets/photo (2).png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">DEVESH</a>
+        <a href="#about" class="logo">Devesh</a>
 
-        <ul class="nav-links" id="navLinks">
-            <li>
-                <a href="#about">ABOUT</a>
-            </li>
-            <li>
-                <a href="edu.html">EDUCATION</a>
-            </li>
-            <li>
-                <a href="#projects">PROJECTS</a>
-            </li>
-             <li>
-                <a href="#Skills">SKILLS</a>
-            </li>
-             <li>
-                <a href="#Achievements">ACHIEVEMENTS</a>
-            </li>
-            <li>
-                <a href="#certifications">CERTIFICATIONS</a>
-            </li>
-            <li>
-                <a href="#contact">CONTACT ME</a>
-            </li>
-        </ul>
-        
+        <nav class="navbar" aria-label="Primary navigation">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
-    <!-- About section -->
-    <section id="about" class="about">
-        <div class="about-container">
-
-            <img src="Assets/photo (2).png" alt="Profile Photo of Devesh Jangid">
-            
-            <div class="info-box">
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>DEVESH JANGID</h1>
-                    <span>Frontend Developer <br> UI/UX Design</span>
+    <main>
+        <section id="about" class="section about">
+            <div class="section-shell about-container">
+                <div class="about-photo">
+                    <img src="Assets/photo (2).png" alt="Profile photo of Devesh Jangid">
                 </div>
 
-                <div class="btn-group">
-                    <a class="btn" href="Assets/Devesh Profile.pdf" download aria-label="Download CV">Download CV</a>
-                    <button class="btn" type="button" onclick="window.location='#contact';">Contact</button>
-                </div>
+                <div class="info-box">
+                    <div class="text">
+                        <h3>Hello, I'm</h3>
+                        <h1>Devesh Jangid</h1>
+                        <span>Frontend Developer and UI learner</span>
+                        <p>I enjoy building responsive websites, improving small interface details, and learning by turning ideas into real projects.</p>
+                    </div>
 
-                <div class="socials">
-                    <a href="https://github.com/devesh9461" aria-label="Github Profile"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com/in/devesh-jangid-linkedin" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="btn-group">
+                        <a class="btn" href="Assets/Devesh Profile.pdf" download>Download CV</a>
+                        <a class="btn btn-secondary" href="#contact">Contact Me</a>
+                    </div>
 
-    <!-- Education section -->
-    <section id="education" class="education">
-        <h2 class="section-title">Education</h2>
-
-        <div class="experience-info">
-            <div class="grid">
-                
-                <div class="grid-card">
-                    <i class="fa-solid fa-user-graduate"></i>
-                    <span>Diploma in Computer Science Engineering (BTER)</span>
-                    <h3>Dr. RadhaKrishnan Polytechnic College, Jaipur</h3>
-                    <p>I am currently pursuing a Polytechnic diploma in Computer Science and Engineering at Dr. RadhaKrishnan Polytechnic College, Jaipur. Having successfully completed all 1st-year semesters and commenced the 2nd Year. With a strong foundation in Technology and problem-solving, I am eager to enhance my skills in programming, software development, and emerging technologies. Passionate about technology, I am always looking for opportunities to expand my knowledge and gain hands-on experience in the field of computer science.</p>
-                </div>
-
-                 <div class="grid-card">
-                    <i class="fa-solid fa-school"></i>
-                    <span>RBSE</span>
-                    <h3>Pink City International Sr. Sec. School hingonia, Jaipur</h3>
-                    <p>My academic journey has provided me with a strong foundation understanding across various subjects, culminating in my successful completion of the 10th Grade. In 2024, I proudly achieved a commendable 83% in the rigorous Rajasthan Board of Secondary Education (RBSE) 10th Grade Examination. This accomplishment reflects my dedication to my studies and my ability to consistently perform well under a standardized testing environment. </p>
-                </div>
-   
-        </div>
-    </section>
-
-    <!-- skills section -->
-     <section id="skills" class="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="experience-info">
-            <div class="grid">
-                <div class="grid-card">
-                    <i class="fab fa-html5"></i>
-                    <span>Hyper Text Markup Language</span>
-                    <h3>HTML 5</h3>
-                    <p>E-commerce sites, blogs, news portals, and government websites all rely on HTML to display text, images, and interactive elements.</p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <span>Cascading Style Sheet</span>
-                    <h3>CSS 3</h3>
-                    <p>Designing and implementing robust server-side applications with Node.js, Python, and efficient database solutions.</p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-brands fa-js"></i>
-                    <span>JS(ES6<sup>+</sup>)</span>
-                    <h3>JavaScript</h3>
-                    <p>Add APIs to enhance application functionality and user experience.</p>
-                </div>
-
-                 <div class="grid-card">
-                    <i class="fa-brands fa-react"></i>
-                    <span>Libraries</span>
-                    <h3>React.js</h3>
-                    <p>Integrating artificial intelligence models and APIs to enhance application functionality and user experience.</p>
-                </div>
-                
-                 <div class="grid-card">
-                    <i class="fa-brands fa-angular"></i>
-                    <span>Libraries</span>
-                    <h3>Angular.js</h3>
-                    <p>Integrating artificial intelligence models and APIs to enhance application functionality and user experience.</p>
-                </div>
-
-                 <div class="grid-card">
-                    <i class="fa-brands fa-vuejs"></i>
-                    <span>Libraries</span>
-                    <h3>Vue.js</h3>
-                    <p>Integrating artificial intelligence models and APIs to enhance application functionality and user experience.</p>
-                </div>
-
-                 <div class="grid-card">
-                    <i class="fa-brands fa-node"></i>
-                    <span>Libraries</span>
-                    <h3>Tailwind Css</h3>
-                    <p>user experience.</p>
-                </div>
-
-                <div class="grid-card">
-                    <i class="fa-brands fa-github"></i>
-                    <span>Version Control System</span>
-                    <h3>Git or Github</h3>
-                    <p>Managing and optimizing databases (SQL and NoSQL) for scalable and high-performance applications.</p>
+                    <div class="socials">
+                        <a href="https://github.com/devesh9461" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/devesh-jangid-linkedin" target="_blank" rel="noreferrer" aria-label="LinkedIn profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section id="education" class="section">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <h2 class="section-title">Education</h2>
+                    <p>A short summary of my current studies and academic background.</p>
+                </div>
 
-      
-    <!-- certification  -->
-  <section id="projects" class="projects">
-        <h2 class="section-title">CERTIFICATIONS</h2>
+                <div class="content-grid">
+                    <article class="grid-card">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <span>Diploma in Computer Science Engineering</span>
+                        <h3>Dr. Radhakrishnan Polytechnic College, Jaipur</h3>
+                        <p>I am currently pursuing a diploma in Computer Science and Engineering and building a stronger foundation in programming, web development, and problem solving.</p>
+                    </article>
 
-        <div class="projects-grid">
-            <div class="projects-card">
-
-                <img src="Assets/Cybersecurity Job Simulation.pdf - Google Chrome 27-07-2025 11_12_49.png" alt="Project Z Screenshot">
-                <h3>Cybersecurity Job Simulation</h3>
-                <p></p>
-                <div class="btn-group">
-                    <div class="btn" href="Assets/Cybersecurity Job Simulation.pdf" download aria-label="Download">View Certification</div>
+                    <article class="grid-card">
+                        <i class="fa-solid fa-school"></i>
+                        <span>RBSE Class 10</span>
+                        <h3>Pink City International Sr. Sec. School, Jaipur</h3>
+                        <p>I completed my 10th class in 2024 with 83%, which helped me build discipline, consistency, and confidence in my studies.</p>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="projects-card">
-                <img src="Assets/Devesh_Jangid_Certificate.pdf - Google Chrome 27-07-2025 11_19_03.png" alt="Project Z Screenshot">
-                <h3>Generative AI <br>Mastermind</h3>
-                <p></p>
-                <div class="btn-group">
-                    <div class="btn" href="Assets/Devesh_Jangid_Certificate.pdf" download aria-label="Download">View Certification</div>
+        <section id="skills" class="section">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <h2 class="section-title">Skills</h2>
+                    <p>Tools and technologies I use while learning and building frontend projects.</p>
+                </div>
+
+                <div class="content-grid">
+                    <article class="grid-card">
+                        <i class="fa-brands fa-html5"></i>
+                        <span>Markup</span>
+                        <h3>HTML5</h3>
+                        <p>I use HTML to build clean page structure, forms, sections, and semantic layouts.</p>
+                    </article>
+
+                    <article class="grid-card">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>Styling</span>
+                        <h3>CSS3</h3>
+                        <p>I use CSS for spacing, responsive layouts, component styling, and simple animations.</p>
+                    </article>
+
+                    <article class="grid-card">
+                        <i class="fa-brands fa-js"></i>
+                        <span>Programming</span>
+                        <h3>JavaScript</h3>
+                        <p>I use JavaScript to handle interactions like menus, forms, validation, and DOM updates.</p>
+                    </article>
+
+                    <article class="grid-card">
+                        <i class="fa-brands fa-react"></i>
+                        <span>Library</span>
+                        <h3>React</h3>
+                        <p>I am learning React to build reusable components and create better single-page interfaces.</p>
+                    </article>
+
+                    <article class="grid-card">
+                        <i class="fa-solid fa-wind"></i>
+                        <span>Utility CSS</span>
+                        <h3>Tailwind CSS</h3>
+                        <p>I use Tailwind CSS when I want to move quickly on layouts and component styling.</p>
+                    </article>
+
+                    <article class="grid-card">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Version Control</span>
+                        <h3>Git and GitHub</h3>
+                        <p>I use GitHub to save my work, track changes, and share projects while learning.</p>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="projects-card">
-                <img src="Assets/Codes - Google Chrome 11-06-2025 09_41_41.png" alt="Project Y Screenshot">
-                <h3>Task Management App</h3>
-                <p>An intuitive task management application with real-time updates and collaborative features for teams.</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+        <section id="certifications" class="section">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <h2 class="section-title">Certifications</h2>
+                    <p>Certificates and learning milestones I have completed recently.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="projects-card">
+                        <img src="Assets/Cybersecurity Job Simulation.pdf - Google Chrome 27-07-2025 11_12_49.png" alt="Cybersecurity Job Simulation certificate preview">
+                        <div class="projects-content">
+                            <h3>Cybersecurity Job Simulation</h3>
+                            <p>Completed a practical virtual experience focused on cybersecurity tasks, analysis, and problem solving.</p>
+                            <div class="btn-group">
+                                <a class="btn btn-secondary" href="Assets/Cybersecurity Job Simulation.pdf" download>View Certificate</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects-card">
+                        <img src="Assets/Devesh_Jangid_Certificate.pdf - Google Chrome 27-07-2025 11_19_03.png" alt="Generative AI Mastermind certificate preview">
+                        <div class="projects-content">
+                            <h3>Generative AI Mastermind</h3>
+                            <p>Completed a learning program focused on current AI tools, practical use cases, and productivity workflows.</p>
+                            <div class="btn-group">
+                                <a class="btn btn-secondary" href="Assets/Devesh_Jangid_Certificate.pdf - Google Chrome 27-07-2025 11_19_03.png">Open Preview</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section id="projects" class="section">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <h2 class="section-title">Projects</h2>
+                    <p>A few frontend projects I have built while practicing HTML, CSS, and JavaScript.</p>
+                </div>
 
-    <!-- Projects section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Recent Projects <br>Using HTML / CSS / JAVA SCRIPT</h2>
+                <div class="projects-grid">
+                    <article class="projects-card">
+                        <img src="Assets/PastPaperVault _ Old Paper Site - Google Chrome 12-07-2025 14_57_37.png" alt="PastPaperVault project screenshot">
+                        <div class="projects-content">
+                            <h3>PastPaperVault</h3>
+                            <p>A website where students can find and download previous year exam papers more easily.</p>
+                            <div class="btn-group">
+                                <a class="btn btn-secondary" href="Assets/PastPaperVault _ Old Paper Site - Google Chrome 12-07-2025 14_57_37.png">Open Preview</a>
+                            </div>
+                        </div>
+                    </article>
 
-        <div class="projects-grid">
-            <div class="projects-card">
-
-                <img src="Assets/PastPaperVault _ Old Paper Site - Google Chrome 12-07-2025 14_57_37.png" alt="Project Z Screenshot">
-                <h3>PastPaperVault</h3>
-                <p>About Website :- Previous Year exam papers download from this website easily. press live demo to check it. <br> Technologies used :- HTML CSS JAVASCRIPT</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+                    <article class="projects-card">
+                        <img src="Assets/Codes - Google Chrome 11-06-2025 09_41_41.png" alt="Todo web app project screenshot">
+                        <div class="projects-content">
+                            <h3>Todo Web App</h3>
+                            <p>A simple task manager built to practice add, delete, and basic JavaScript DOM interactions.</p>
+                            <div class="btn-group">
+                                <a class="btn btn-secondary" href="../To-do-Web/index.html">Open Demo</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <div class="projects-card">
-                <img src="Assets/Simple Calculator - Google Chrome 11-06-2025 09_39_26-1.png" alt="Project Z Screenshot">
-                <h3>Task Management App</h3>
-                <p>An intuitive task management application with real-time updates and collaborative features for teams.</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+        <section id="achievements" class="section">
+            <div class="section-shell">
+                <div class="section-heading">
+                    <h2 class="section-title">Achievements</h2>
+                    <p>Some personal milestones that motivate me to keep learning and improving.</p>
+                </div>
+
+                <div class="achievement-layout">
+                    <div class="content-grid">
+                        <article class="grid-card">
+                            <i class="fa-solid fa-award"></i>
+                            <span>Academic result</span>
+                            <h3>83% in Class 10</h3>
+                            <p>Scored 83% in my 10th board exams and built a strong base for my current technical studies.</p>
+                        </article>
+
+                        <article class="grid-card">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>Recognition</span>
+                            <h3>Laptop Achievement Award</h3>
+                            <p>Received a laptop achievement award in 2024, which encouraged me to stay focused on learning and growth.</p>
+                        </article>
+                    </div>
+
+                    <div class="achievement-image">
+                        <img src="Assets/Achievements.jpg" alt="Achievements section preview">
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="projects-card">
-                <img src="Assets/Codes - Google Chrome 11-06-2025 09_41_41.png" alt="Project Y Screenshot">
-                <h3>Task Management App</h3>
-                <p>An intuitive task management application with real-time updates and collaborative features for teams.</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+        <section id="contact" class="section contact">
+            <div class="section-shell">
+                <div class="input-box">
+                    <div class="section-heading section-heading-left">
+                        <h2 class="section-title">Contact Me</h2>
+                        <p>If you want to talk about a project, learning, or collaboration, you can leave a message here.</p>
+                    </div>
+
+                    <form>
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="contactName" placeholder="Your name">
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                            <input type="email" id="contactEmail" placeholder="example@email.com">
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <textarea id="contactMessage" placeholder="Your message"></textarea>
+                        </div>
+
+                        <button class="btn submit-btn" id="contactSubmitBtn" type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
+        </section>
+    </main>
 
-        </div>
-    </section>
-
-
-
-<!-- Projects using React.js -->
-     <section id="projects-react" class="projects">
-        <h2 class="section-title">Recent Projects<br>Using React.js / Next.js</h2>
-
-        <div class="projects-grid">
-            <div class="projects-card">
-
-                <img src="Assets/Simple Calculator - Google Chrome 11-06-2025 09_39_26-1.png" alt="Project Z Screenshot">
-                <h3>E-commerce Platform</h3>
-                <p>A full-stack e-commerce solution with user authentication, product catalog, shopping cart, and payment integration.</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
-                </div>
-            </div>
-
-            <div class="projects-card">
-                <img src="Assets/Simple Calculator - Google Chrome 11-06-2025 09_39_26-1.png" alt="Project Z Screenshot">
-                <h3>Task Management App</h3>
-                <p>An intuitive task management application with real-time updates and collaborative features for teams.</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
-                </div>
-            </div>
-
-            <div class="projects-card">
-                <img src="Assets/Codes - Google Chrome 11-06-2025 09_41_41.png" alt="Project Y Screenshot">
-                <h3>Team Collaboration Suite</h3>
-                <p>A collaborative platform for teams to manage projects, share files, and communicate in real-time.</p>
-                <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
-                </div>
-            </div>
-    </section>
-
-
-     <!-- Achievements section -->
-    
-     <section id="achievements" class="achievements">
-        <h2 class="section-title">Achievements</h2>
-
-        <div class="experience-info">
-            <div class="grid">
-                <div class="grid-card">
-                    <i class="fa-solid fa-award"></i>
-                    <span>10th marks</span>
-                    <h3>83%</h3>
-                    <p>Achieved high marks in 10th grade, demonstrating strong foundational knowledge.</p>
-                </div>
-                <div class="grid-card">
-                    <i class="fa-solid fa-award"></i>
-                    <span>Laptop Achievement</span>
-                    <h3>Advance Agrolife limited</h3>
-                    <p>In 2024, I was honored to receive a laptop achievement award from Advanced Agrolife Limited. This recognition was a testament to my dedication and performance during my tenure with the company. The award acknowledged my significant contributions to 10th Examination marks achievement.</p>
-                </div>
-        </div>
-            <img src="Assets/Achievements.jpg" alt="Achievements Graphic">
-            </div>
-
-        </div>
-        
-    </section>
-
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-        <div class="input-box">
-            <h2 class="section-title">Contact Me</h2>
-
-            <div class="input-field">
-                <input type="text" id="contactName" placeholder="Your Name" class="text">
-                <i class="fa-solid fa-user"></i>
-            </div>
-            <div class="input-field">
-                <input type="email" id="contactEmail" placeholder="example@email.com" class="text">
-                <i class="fa-solid fa-envelope-open-text"></i>
-            </div>
-            <div class="input-field">
-                <textarea id="contactMessage" placeholder="Your Message" class="text"></textarea>
-                <i class="fa-solid fa-comment-dots"></i>
-            </div>
-
-            <button class="btn submit-btn" id="contactSubmitBtn">Submit</button>
-        </div>
-    </section>
-
-    <!-- Footer section -->
-    <footer>        
-        <p class="copyright">© 2025 All Rights Reserved. Devesh Jangid</p>    
+    <footer>
+        <p class="copyright">&copy; 2025 Devesh Jangid. All rights reserved.</p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
